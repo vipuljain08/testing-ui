@@ -124,6 +124,7 @@ section, footer {
 
 .search .pr-heading {
     align-self: flex-start;
+    margin-left: 2rem;
 }
 .search .pr-heading h2 {
     font-size: 0.7rem;
