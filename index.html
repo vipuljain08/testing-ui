@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Seller Buyer Activity</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -13,23 +19,14 @@
         <nav class="navbar">
           <div class="logo">
             <img src="imgs/logo1.png" alt="Company Logo" />
-            <!-- <div class="logo-txt">
-              <h3>PretVA</h3>
-              <p>Making Fashion Easy</p>
-            </div> -->
           </div>
-          <!-- <div class="menu-toggle" id="mobile-menu">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-          </div> -->
           <div class="my-account">
             <div class="img">
               <img src="imgs/user.svg" alt="" />
             </div>
             <p>My Account</p>
           </div>
-          <ul class="nav no-search">
+          <ul class="nav">
             <li class="nav-item"><a href="#">Notifications</a></li>
             <li class="nav-item"><a href="#">About</a></li>
             <li class="nav-item"><a href="#">Services</a></li>
@@ -59,7 +56,9 @@
             <li class="filter-items">500 mtrs <span>✖</span></li>
             <li class="filter-items">INR 50-55/mtr <span>✖</span></li>
             <li class="filter-items">1-2 months <span>✖</span></li>
-            <li class="filter-items" id="clear-all">Clear All <span>✖</span></li>
+            <li class="filter-items" id="clear-all">
+              Clear All <span>✖</span>
+            </li>
           </ul>
         </div>
       </section>
@@ -290,13 +289,28 @@
           </div>
         </div>
       </section>
-      <footer>
-        <ul class="footer-links">
-          <li class="ft-link"><a href="#">Get in touch</a></li>
-          <li class="ft-link"><a href="#">Location</a></li>
-          <li class="ft-link"><a href="#">Contact</a></li>
-          <li class="ft-link"><a href="#">Follow</a></li>
-        </ul>
+      <footer class="footer">
+        <a class="footer__logo" href="#">PretVA</a>
+
+        <div class="footer__social">
+          <a href="#">
+            <i class="fab fa-facebook-square"></i>
+          </a>
+          <a href="#">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="#">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+        </div>
+
+        <div class="footer__links">
+          <a href="#">Location</a>
+          <a href="#">Contact Us</a>
+          <a href="#">Support</a>
+        </div>
+
+        <div class="footer__copyright">&copy;2020 All Rights Reserved.</div>
       </footer>
     </div>
     <script src="script.js"></script>

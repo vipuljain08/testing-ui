@@ -10,16 +10,13 @@ html, body {
     /* background-color: #f4f4fd; */
 }
 
-body {
-    font-size: 62.5%;
-}
-
 ul, nav {
     list-style: none;
 }
 
 a {
     font-size: 0.8rem;
+    color: grey;
     text-decoration: none;
 }
 
@@ -30,17 +27,18 @@ img {
 }
 
 h2 {
-    font-size: 1rem;
+    font-size: 1.2rem;
 }
 
 p{
-    font-size: 0.6rem;
+    font-size: 0.8rem;
 }
 
 button {
     border: 0;
-    font-size: 0.6rem;
-    padding: 0.5rem;
+    font-size: 0.8rem;
+    padding: 0.8rem;
+    color: black;
 }
 
 header.nav-wrapper {
@@ -49,77 +47,43 @@ header.nav-wrapper {
 
 .navbar {
     width: 100%; height: 100%;
-    padding: 20px;
+    padding: 1.25rem;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
-    /* border: 1px solid black;  */
+    gap: 0.625rem;
 }
-
-div.logo {
-    /* border: 1px solid black; */
-    /* width: 140px; height: 100%; */
-}
-
-/* div.logo-img {
-    width: 50px;
-}
-div.logo-txt {
-    font-size: 0.8rem;
-} */
-
-/* .menu-toggle {
-    width: 60px; height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-}
-
-.menu-toggle span {
-    width: 50px; height: 8px;
-    background-color: blueviolet;
-    border-radius: 2px;
-} */
 
 .my-account {
-    /* justify-self: end; */
-    height: 100%;
-    align-items: flex-end;
     display: flex;
     flex-direction: column;
-    /* border: 1px solid black; */
+    align-items: flex-end;
 }
 
 .my-account .img {
     width: 40px; height: 40px;
+    margin-bottom: 0.3rem;
 }
 
-ul.no-search {
+ul {
     grid-column: span 2;
     display: flex;
     flex-wrap: wrap;
     line-height: 1.3rem;
-    /* justify-content: space-evenly; */
 }
-
-ul.no-search li {
-    margin-left: 30px;
+ul li:not(:last-child) {
+    margin-right: 30px;
 }
-ul.no-search li a {
-    color: rgb(170, 170, 170);
-    font-weight: 500;
-}
-ul.no-search li a:hover {
+ul li a:hover {
     color: black;
 }
 
-section, footer {
+section {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 10px;
+    padding: 0.625rem;
+    margin-bottom: 1rem;
 }
 
 .search .pr-heading {
@@ -127,20 +91,16 @@ section, footer {
     margin-left: 2rem;
 }
 .search .pr-heading h2 {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     color: grey;
 }
 
 .search .search-between {
-    width: 240px; height: 30px;
+    width: 16.25rem;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 5px;
+    gap: 0.3rem;
     margin-top: 20px;
-}
-
-.search .search-between button {
-    color: black;
 }
 
 .sr-suply-prods {
@@ -153,11 +113,11 @@ section, footer {
 }
 
 .search-input {
-    width: 300px; height: 30px;
+    width: 18.75rem;
     display: grid;
     grid-template-columns: 2fr 1fr;
-    gap: 10px;
-    margin-top: 30px;
+    gap: 0.625rem;
+    margin-top: 2rem;
 }
 
 .search-input input {
@@ -172,22 +132,15 @@ section, footer {
 }
 
 .search-select {
-    width: 300px;
+    width: 20rem;
     display: grid;
-    grid-template-columns: 1fr 4fr;
-    margin-top: 30px;
-    align-items: center;
+    grid-template-rows: 1fr/300px;
+    gap: 0.625rem;
+    margin-top: 2rem;
     /* border: 1px solid black; */
 }
 
-.search-select ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
 .search-select ul li {
-    /* background-color: rgb(135, 233, 115); */
     background-color:  rgba(56, 56, 241, 0.801);
     color:rgb(255, 255, 255);
     margin: 0.3rem;
@@ -201,24 +154,23 @@ section, footer {
 /* ----------------------- */
 
 .profile-container {
-    width: 300px;
+    width: 18.75rem;
     display: grid;
     grid-template-columns: 1fr;
-    gap: 20px;
-    margin-top: 10px;
+    gap: 1.25rem;
 }
 
 .profile-container .profile-card {
-    padding: 12px;
+    padding: 0.75rem;
     border: 1px solid black;
     display: grid;
     grid-template-columns: 1fr 2fr;
-    gap: 10px;
+    gap: 0.625rem;
     align-items: center;
 }
 
 .avatar {
-    width: 60px;
+    width: 3.75rem;
 }
 
 .prod-details,
@@ -228,27 +180,50 @@ section, footer {
 .profile-nav-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
+    gap: 0.625rem;
     align-items: center;
 }
 .nav-items {
     text-align: center;
 }
 .nav-items a img {
-    width: 20px;
+    width: 1.25rem;
 }
 
-footer {
-    background-color: rgba(56, 56, 241, 0.801);
-    margin-top: 20px;
+.footer {
+    background-color: darkblue;
+    color: white;
+    padding: 2.5rem;
+    text-align: center;
 }
 
-footer ul {
-    width: 100%;
+.footer a {
+    color: white;
+    font-size: 1.4rem;
+}
+
+.footer .footer__logo {
+    display: inline-block;
+    margin-bottom: 1.36rem;
+    font-size: 2rem;
+}
+
+.footer .footer__social {
+    margin-bottom: 1.36rem;
+}
+.footer .footer__social a:not(:last-child) {
+    margin-right: 1.5rem;
+}
+
+.footer .footer__links {
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: column;
+    margin-bottom: 1.6rem;
+}
+.footer .footer__links a:not(:last-child) {
+    margin-bottom: 0.6rem;
 }
 
-footer ul li a {
-    color: rgb(255, 255, 255);
+.footer .footer__copyright {
+    font-size: 0.8rem;
 }
